@@ -1,3 +1,5 @@
+Description:
+
 Write a C function with type int argument n and type double argument x that returns as its value the sum o the first n terms of the series: (See Homework 1.pdf)
 
 This series is undefined when n is negative or zero. Your function should return -1 if it is called with value of n that is negative or zero.
