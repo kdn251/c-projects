@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="gtk30">
+  <template class="GtkSidebarRow" parent="GtkListBoxRow">
+    <property name="visible">True</property>
+    <property name="margin-top">1</property>
+    <property name="margin-bottom">1</property>
+    <style>
+      <class name="sidebar-row"/>
+    </style>
+    <child>
+      <object class="GtkRevealer" id="revealer">
+        <property name="visible">1</property>
+        <property name="reveal-child">1</property>
+        <signal name="notify::child-revealed" handler="on_child_revealed"/>
+        <style>
+          <class name="sidebar-revealer"/>
+        </style>
+        <child>
+          <object class="GtkEventBox" id="event_box">
+            <property name="visible">1</property>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">1</property>
+                <child>
+                  <object class="GtkImage" id="icon_widget">
+                    <property name="visible">1</property>
+                    <style>
+                      <class name="sidebar-icon"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label_widget">
+                    <property name="visible">1</property>
+                    <property name="hexpand">1</property>
+                    <property name="xalign">0</property>
+                    <style>
+                      <class name="sidebar-label"/>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="eject_button">
+                    <property name="visible">1</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="margin-start">4px</property>
+                    <property name="no-show-all">1</property>
+                    <child>
+                      <object class="GtkImage">
+                        <property name="visible">1</property>
+                        <property name="icon-name">media-eject-symbolic</property>
+                        <property name="icon-size">1</property>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="image-button"/>
+                      <class name="sidebar-button"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+  <!-- We need it to not make the row smaller when the eject button is hidden -->
+  <object class="GtkSizeGroup">
+    <property name="mode">vertical</property>
+    <widgets>
+      <widget name="eject_button"/>
+      <widget name="label_widget"/>
+      <widget name="icon_widget"/>
+    </widgets>
+  </object>
+</interface>
