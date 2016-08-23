@@ -1,8 +1,0 @@
-<!-- test invalid file filter markup element -->
-<interface>
-  <object class="GtkFileFilter">
-    <patterns>
-      <warbl/>
-    </patterns>
-  </object>
-</interface>

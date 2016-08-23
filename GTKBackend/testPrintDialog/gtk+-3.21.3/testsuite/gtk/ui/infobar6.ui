@@ -1,8 +1,0 @@
-<!-- test all valid infobar markup -->
-<interface>
-  <object class="GtkInfoBar">
-    <action-widgets>
-      <action-widget response="ok">xyzzy</action-widget>
-    </action-widgets>
-  </object>
-</interface>

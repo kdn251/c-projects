@@ -1,5 +1,0 @@
-<interface>
-  <object class="GtkWindow">
-    <style><class>name</class></style>
-  </object>
-</interface>

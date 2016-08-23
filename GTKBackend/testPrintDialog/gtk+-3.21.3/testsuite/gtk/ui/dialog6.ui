@@ -1,8 +1,0 @@
-<!-- test invalid id in dialog markup -->
-<interface>
-  <object class="GtkDialog">
-    <action-widgets>
-      <action-widget response="ok">xyzzy</action-widget>
-    </action-widgets>
-  </object>
-</interface>

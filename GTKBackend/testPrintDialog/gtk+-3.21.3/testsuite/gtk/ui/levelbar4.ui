@@ -1,8 +1,0 @@
-<!-- invalid levelbar attribute value -->
-<interface>
-  <object class="GtkLevelBar">
-    <offsets>
-      <offset name="one" value="xyzzy"/>
-    </offsets>
-  </object>
-</interface>

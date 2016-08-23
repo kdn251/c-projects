@@ -1,8 +1,0 @@
-<!-- test invalid label attribute name -->
-<interface>
-  <object class="GtkLabel">
-    <attributes>
-      <attribute name="warbl" value="true"/>
-    </attributes>
-  </object>
-</interface>

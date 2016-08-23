@@ -1,8 +1,0 @@
-<!-- test invalid scale mark attributes -->
-<interface>
-  <object class="GtkScale">
-    <marks>
-      <mark nosuchattribute="" value="0"/>
-    </marks>
-  </object>
-</interface>

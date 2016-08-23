@@ -1,1 +1,0 @@
-N_("Object Hierarchy");

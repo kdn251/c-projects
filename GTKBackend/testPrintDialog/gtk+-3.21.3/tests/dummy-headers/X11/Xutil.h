@@ -1,1 +1,0 @@
-/* Dummy header for the Xlib backend. */

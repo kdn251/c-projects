@@ -1,9 +1,0 @@
-<!-- placeholders are stripped -->
-<interface>
-  <object class="GtkWindow">
-    <child>
-      <object class="GtkBox">
-      </object>
-    </child>
-  </object>
-</interface>

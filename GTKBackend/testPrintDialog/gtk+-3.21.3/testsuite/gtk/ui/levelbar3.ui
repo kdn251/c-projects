@@ -1,8 +1,0 @@
-<!-- missing levelbar offset attribute -->
-<interface>
-  <object class="GtkLevelBar">
-    <offsets>
-      <offset value="1"/>
-    </offsets>
-  </object>
-</interface>

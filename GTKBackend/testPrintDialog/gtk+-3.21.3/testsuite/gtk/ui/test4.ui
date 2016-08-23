@@ -1,5 +1,0 @@
-<interface>
-  <object class="GtkBox">
-    <property name="orientation"><random></random></property>
-  </object>
-</interface>
